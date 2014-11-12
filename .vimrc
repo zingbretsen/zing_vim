@@ -29,8 +29,8 @@ inoremap jj <Esc>
 let g:clipbrdDefaultReg = '+'
 
 " Create Blank Newlines and stay in Normal mode
-nnoremap <silent> zj o<Esc>
-nnoremap <silent> zk O<Esc>
+nnoremap <silent> zj o<Esc>k
+nnoremap <silent> zk O<Esc>j
 
 nnoremap <space> za
 set showcmd
