@@ -18,12 +18,15 @@ map n nzz
 nnoremap ; :
 nnoremap : ;
 
+" In visual mode as well
+vnoremap ; :
+vnoremap : ;
+
 set nu
 
 inoremap jj <Esc>
 
 let g:clipbrdDefaultReg = '+'
-
 
 " Create Blank Newlines and stay in Normal mode
 nnoremap <silent> zj o<Esc>
@@ -32,3 +35,5 @@ nnoremap <silent> zk O<Esc>
 nnoremap <space> za
 set showcmd
 set foldmethod=marker
+
+set cpoptions+=$
