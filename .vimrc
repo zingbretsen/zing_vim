@@ -34,6 +34,5 @@ nnoremap <silent> zk O<Esc>j
 
 nnoremap <space> za
 set showcmd
-set foldmethod=marker
 
 set cpoptions+=$
