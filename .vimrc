@@ -38,3 +38,6 @@ set showcmd
 set cpoptions+=$
 
 colorscheme elflord
+
+let g:closetag_html_style=1
+source ~/.vim/bundle/closetag/closetag.vim
