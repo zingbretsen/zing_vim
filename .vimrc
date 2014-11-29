@@ -36,3 +36,5 @@ nnoremap <space> za
 set showcmd
 
 set cpoptions+=$
+
+colorscheme elflord
