@@ -7,12 +7,17 @@ syntax enable
 syntax on
 set grepprg=grep\ -nH\ $*
 
+" Underlines current line
+set cursorline
+
+
+
 set autoindent
 filetype plugin indent on
 
 " search will center on the line it's found in.
-map N Nzz
-map n nzz
+nnoremap N Nzz
+nnoremap n nzz
 
 " Swap ; and :  Convenient.
 nnoremap ; :
@@ -22,20 +27,35 @@ nnoremap : ;
 vnoremap ; :
 vnoremap : ;
 
+" Move vertically by visual line
+nnoremap j gj
+nnoremap k gk
+
+" Everyone one loves line numbers, right?
 set nu
 
+" Get out of insert mode with jj
 inoremap jj <Esc>
-
-let g:clipbrdDefaultReg = '+'
 
 " Create Blank Newlines and stay in Normal mode
 nnoremap <silent> zj o<Esc>k
 nnoremap <silent> zk O<Esc>j
 
+" Y now yanks from current pos thru the end of the line
+" Ignoring newline at the end
+nnoremap <silent> Y y$
+
+inoremap ;w <Esc>:w
+
+" Code folding
+set foldenable
+set foldlevelstart=10
+set foldmethod=indent
 nnoremap <space> za
+
 set showcmd
 
-set cpoptions+=$
+" set cpoptions+=$
 
 colorscheme elflord
 
