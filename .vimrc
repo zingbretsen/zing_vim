@@ -1,16 +1,22 @@
 set nocompatible
 
+" Vim pathogen for easier plugin installation
 execute pathogen#infect()
-filetype on
-filetype plugin on
+
+set grepprg=grep\ -nH\ $*
+
+" Syntax highlighting
 syntax enable
 syntax on
-set grepprg=grep\ -nH\ $*
+filetype on
+filetype plugin on
 
 " Underlines current line
 set cursorline
 
-
+" Better case searching
+set ignorecase
+set smartcase
 
 set autoindent
 filetype plugin indent on
@@ -44,6 +50,8 @@ nnoremap <silent> zk O<Esc>j
 " Y now yanks from current pos thru the end of the line
 " Ignoring newline at the end
 nnoremap <silent> Y y$
+
+vnoremap // "1y/<C-R>1<CR>
 
 inoremap ;w <Esc>:w
 
