@@ -69,3 +69,7 @@ colorscheme elflord
 
 let g:closetag_html_style=1
 source ~/.vim/bundle/closetag/closetag.vim
+
+" Uses tabular plugin to align by = and :
+nnoremap <Tab>   :Tab /=<CR>:Tab /:<CR>
+vnoremap <Tab>   :Tab /=<CR>:Tab /:<CR>

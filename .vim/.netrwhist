@@ -1,7 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/home/zach/.wine'
 let g:netrw_dirhist_2='/home/zach/Documents/academic/nyu/webmt_cleaner_prob/corrected'
 let g:netrw_dirhist_3='/usr/bin/zach'
 let g:netrw_dirhist_4='/Users/zingbretsen/Downloads/rapidreader_std/RR6LocalValidator_2006_07_31_0'
 let g:netrw_dirhist_5='/usr/local/lib/python2.7/site-packages/rymvpa'
+let g:netrw_dirhist_6='/users/zingbretsen/bin'
