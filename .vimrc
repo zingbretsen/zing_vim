@@ -18,6 +18,9 @@ set cursorline
 set ignorecase
 set smartcase
 
+" Highlight searches
+set hlsearch
+
 set autoindent
 filetype plugin indent on
 
@@ -65,7 +68,9 @@ set showcmd
 
 " set cpoptions+=$
 
-colorscheme elflord
+" Set colors--Makes vimdiff easier
+colorscheme desert
+highlight! link DiffText Todo
 
 let g:closetag_html_style=1
 source ~/.vim/bundle/closetag/closetag.vim
@@ -73,3 +78,19 @@ source ~/.vim/bundle/closetag/closetag.vim
 " Uses tabular plugin to align by = and :
 nnoremap <Tab>   :Tab /=<CR>:Tab /:<CR>
 vnoremap <Tab>   :Tab /=<CR>:Tab /:<CR>
+
+" Enable mouse control
+set mouse=a
+
+" Swap ' and ` for marks
+nnoremap ' `
+nnoremap ` '
+
+" Nicer scrolling
+set so=10
+
+" Backspace deletes backwards
+nnoremap  X
+
+" No more error sounds
+set noerrorbells
