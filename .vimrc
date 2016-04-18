@@ -43,8 +43,8 @@ nnoremap k gk
 " Everyone one loves line numbers, right?
 set nu
 
-" Get out of insert mode with jj
-inoremap jj <Esc>
+" Get out of insert mode with jk
+inoremap jk <Esc>
 
 " Create Blank Newlines and stay in Normal mode
 nnoremap <silent> zj o<Esc>k
@@ -76,8 +76,8 @@ let g:closetag_html_style=1
 source ~/.vim/bundle/closetag/closetag.vim
 
 " Uses tabular plugin to align by = and :
-nnoremap <Tab>   :Tab /=<CR>:Tab /:<CR>
-vnoremap <Tab>   :Tab /=<CR>:Tab /:<CR>
+nnoremap <Tab>   :Tab /=<CR>:Tab /:<CR>:Tab /,<CR>
+vnoremap <Tab>   :Tab /=<CR>:Tab /:<CR>:Tab /,<CR>
 
 " Enable mouse control
 set mouse=a
@@ -94,3 +94,8 @@ nnoremap  X
 
 " No more error sounds
 set noerrorbells
+let @p = ';%s/^\s*>>> //;%s/^\s*\.\.\. //gg=G'
+
+" 
+set clipboard+=unnamed
+set spell spelllang=en_us
